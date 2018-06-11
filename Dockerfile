@@ -3,10 +3,9 @@ WORKDIR /app
 
 FROM microsoft/dotnet:2.0-sdk AS build
 WORKDIR /src
-COPY StudyDocker/StudyDocker.csproj StudyDocker/
-RUN dotnet restore StudyDocker/StudyDocker.csproj
+RUN dotnet restore StudyDocker.csproj
 COPY . .
-WORKDIR /src/StudyDocker
+WORKDIR /src
 RUN dotnet build StudyDocker.csproj -c Release -o /app
 
 FROM build AS publish
