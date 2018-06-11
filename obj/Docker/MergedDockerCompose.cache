@@ -1,7 +1,0 @@
-services:
-  studydocker:
-    build:
-      context: C:\Users\cuonglam\Desktop\StudyDocker
-      dockerfile: StudyDocker/Dockerfile
-    image: studydocker
-version: '3.4'

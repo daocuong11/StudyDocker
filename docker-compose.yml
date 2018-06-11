@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  studydocker:
-    image: ${DOCKER_REGISTRY}studydocker
-    build:
-      context: .
-      dockerfile: StudyDocker/Dockerfile
